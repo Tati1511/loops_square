@@ -1,15 +1,15 @@
 fn print_square (number:i32)-> i32
-{  let mut row = 0;
-    while row < number {
-        let mut col = 0;
-        while col < 10 {
+{  let mut col = 0;
+    while col < number {
+        let mut row = 0;
+        while row < 10 {
             print!("{}", if row == col { "X" } else { "O" });
             col += 1;
         }
         println!("");
-        row += 1;
+        col += 1;
     }
-    return row
+    return col
 }
 
 
@@ -18,5 +18,4 @@ fn print_square (number:i32)-> i32
 
 fn main() {
     print_square(10);
-    print_square(15);
 }
